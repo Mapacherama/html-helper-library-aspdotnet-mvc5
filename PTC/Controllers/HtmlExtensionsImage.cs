@@ -13,8 +13,29 @@ namespace PTC
             this HtmlHelper htmlHelper,
             string src,
             string altText,
+            
+            object htmlAttrributes = null)
+        {
+            return HtmlExtensionsImage.Image(htmlHelper, src, altText, string.Empty, string.Empty, htmlAttrributes);
+        }
+
+        public static MvcHtmlString Image(
+            this HtmlHelper htmlHelper,
+            string src,
+            string altText,
             string cssClass,
-            string name)
+            object htmlAttrributes = null)
+        {
+            return HtmlExtensionsImage.Image(htmlHelper, src, altText, cssClass, string.Empty, htmlAttrributes);
+        }
+
+        public static MvcHtmlString Image(
+            this HtmlHelper htmlHelper,
+            string src,
+            string altText,
+            string cssClass,
+            string name, 
+            object htmlAttrributes = null)
         {
 
            TagBuilder tb = new TagBuilder("img");
@@ -36,6 +57,8 @@ namespace PTC
             tb.AddCssClass(cssClass);
 
             }
+
+            tb.MergeAttributes(HtmlHelper.AnonymousObjectToHtmlAttributes(htmlAttrributes));
 
             // HTML Encode the String
             return MvcHtmlString.Create(tb.ToString(TagRenderMode.SelfClosing));

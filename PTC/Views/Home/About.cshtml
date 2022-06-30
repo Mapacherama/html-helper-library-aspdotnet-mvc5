@@ -13,7 +13,8 @@
           @Html.Image("../Images/Michael.jpg",
                      "Michael Krasowski", 
                      "img-responsive img-rounded",
-                     "imgMichael"
+                     "imgMichael",
+                     new { data_action = "moreinfo", data_toggle = "imgtoggle" }
                      )
       </div>
     <div class="col-md-10">
@@ -28,7 +29,9 @@
           @Html.Image("../Images/John.jpg",
                        "John Kuhn",
                        "img-responsive img-rounded",
-                       "imgJohn")
+                       "imgJohn",
+                        new { data_action = "moreinfo", data_toggle = "imgtoggle" }
+                       )
       </div>
     <div class="col-md-10">
       John Kuhn is the CTO of Paul's Training Company. John is reponsible for all the great technology that our customers enjoy when using this site.
