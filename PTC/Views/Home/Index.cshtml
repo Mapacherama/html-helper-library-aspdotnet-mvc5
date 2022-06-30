@@ -27,24 +27,19 @@
         </div>
       </div>
       <div class="panel-footer">
-        <button id="btnSearch"
-                class="btn btn-sm btn-primary"
-                data-pdsa-action="search">
-          <i class="glyphicon glyphicon-search"></i>
-          &nbsp;Search
-        </button>
-        <button id="btnReset"
-                class="btn btn-sm btn-primary"
-                data-pdsa-action="resetsearch">
-          <i class="glyphicon glyphicon-share-alt"></i>
-          &nbsp;Reset
-        </button>
-        <button id="btnAdd"
-                class="btn btn-sm btn-success"
-                data-pdsa-action="add">
-          <i class="glyphicon glyphicon-plus"></i>
-          &nbsp;Add
-        </button>
+          @Html.BootstrapButton("<i class='glyphicon glyphicon-search'></i>&nbsp;Search", "btn-sm btn-primary", "searchButton","Click here to Search.", false, true, HtmlExtensionsCommon.HtmlButtonTypes.button, "Search")
+          <button id="btnReset"
+                  class="btn btn-sm btn-primary"
+                  data-pdsa-action="resetsearch">
+              <i class="glyphicon glyphicon-share-alt"></i>
+              &nbsp;Reset
+          </button>
+          <button id="btnAdd"
+                  class="btn btn-sm btn-success"
+                  data-pdsa-action="add">
+              <i class="glyphicon glyphicon-plus"></i>
+              &nbsp;Add
+          </button>
       </div>
     </div>
    <!-- ** END SEARCH AREA ** -->
@@ -109,21 +104,18 @@
       </div>
       <div class="panel-footer">
         <div class="row">
-          <div class="col-sm-12">
-            <button id="btnSave"
-                    class="btn btn-sm btn-primary"
-                    data-pdsa-action="save">
-              <i class="glyphicon glyphicon-floppy-disk"></i>
-              &nbsp;Save
-            </button>
-            <button id="btnCancel"
-                    class="btn btn-sm btn-primary"
-                    formnovalidate="formnovalidate"
-                    data-pdsa-action="cancel">
-              <i class="glyphicon glyphicon-remove-circle"></i>
-              &nbsp;Cancel
-            </button>
-          </div>
+            <div class="col-sm-12">
+                @Html.BootstrapButton("<i class='glyphicon glyphicon-floppy-disk'></i>&nbsp;Save",
+         "btn-sm btn-primary", "saveButton", "Click here to save.", true, false, HtmlExtensionsCommon.HtmlButtonTypes.button, "Save");
+
+                <button id="btnCancel"
+                        class="btn btn-sm btn-primary"
+                        formnovalidate="formnovalidate"
+                        data-pdsa-action="cancel">
+                    <i class="glyphicon glyphicon-remove-circle"></i>
+                    &nbsp;Cancel
+                </button>
+            </div>
         </div>
       </div>
     </div>

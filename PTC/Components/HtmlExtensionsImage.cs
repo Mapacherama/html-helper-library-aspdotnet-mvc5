@@ -40,12 +40,7 @@ namespace PTC
 
            TagBuilder tb = new TagBuilder("img");
 
-            if (!string.IsNullOrWhiteSpace(name))
-            {
-                name = TagBuilder.CreateSanitizedId(name);
-                tb.GenerateId(name);
-                tb.MergeAttribute("name", name);
-            }
+            HtmlExtensionsCommon.AddName(tb, name, "");
 
 
             tb.MergeAttribute("src", src);
