@@ -78,25 +78,29 @@
         <!-- ** BEGIN INPUT AREA -->
         <div class="form-group">
           @Html.LabelFor(m => m.Entity.ProductName, "Product Name")
-          @Html.TextBoxFor(m => m.Entity.ProductName,
+          @Html.BootstrapTextBoxFor(m => m.Entity.ProductName,
+         HtmlExtensionsCommon.Html5InputTypes.text,
              new { @class = "form-control" })
         </div>
         <div class="form-group">
           @Html.LabelFor(m => m.Entity.IntroductionDate, "Introduction Date")
-          @Html.TextBoxFor(m => m.Entity.IntroductionDate,
-             new { @class = "form-control", type="date" })
+          @Html.BootstrapTextBoxFor(m => m.Entity.IntroductionDate,
+         HtmlExtensionsCommon.Html5InputTypes.date,
+             new { @class = "form-control" })
         </div>
         <div class="form-group">
           @Html.LabelFor(m => m.Entity.Url, "Url")
-          @Html.TextBoxFor(m => m.Entity.Url, 
-             new { @class = "form-control", type="url" })
+          @Html.BootstrapTextBoxFor(m => m.Entity.Url,
+         HtmlExtensionsCommon.Html5InputTypes.url,
+             new { @class = "form-control"})
         </div>
         <div class="form-group">
           @Html.LabelFor(m => m.Entity.Price, "Price")
 
 
-          @Html.TextBoxFor(m => m.Entity.Price,
-             new { @class = "form-control", type = "number" })
+          @Html.BootstrapTextBoxFor(m => m.Entity.Price,
+         HtmlExtensionsCommon.Html5InputTypes.number,
+             new { @class = "form-control" })
 
 
         </div>
