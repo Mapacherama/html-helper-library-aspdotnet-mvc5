@@ -9,11 +9,13 @@
 <h2>Our Leadership</h2>
 <div class="well well-sm">
   <div class="row">
-    <div class="col-md-2">
-      <img src="~/Images/Michael.jpg"
-           alt="Michael Krasowski"
-           class="img-responsive img-rounded img-thumbnail" />
-    </div>
+      <div class="col-md-2">
+          @Html.Image("../Images/Michael.jpg",
+                     "Michael Krasowski", 
+                     "img-responsive img-rounded",
+                     "imgMichael"
+                     )
+      </div>
     <div class="col-md-10">
       Michael Krasowski is the COO of Paul's Training Company. He has been instrumental in making Paul's Training Company into one of the best training companies in the country.
     </div>
@@ -22,11 +24,12 @@
 
 <div class="well well-sm">
   <div class="row">
-    <div class="col-md-2">
-      <img src="~/Images/John.jpg"
-           alt="John Kuhn"
-           class="img-responsive img-rounded img-thumbnail" />
-    </div>
+      <div class="col-md-2">
+          @Html.Image("../Images/John.jpg",
+                       "John Kuhn",
+                       "img-responsive img-rounded",
+                       "imgJohn")
+      </div>
     <div class="col-md-10">
       John Kuhn is the CTO of Paul's Training Company. John is reponsible for all the great technology that our customers enjoy when using this site.
     </div>
