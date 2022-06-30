@@ -1,0 +1,6 @@
+D:\.NET development\html-helper-library-aspdotnet-mvc5\PTCCommon\bin\Debug\PTCCommon.dll
+D:\.NET development\html-helper-library-aspdotnet-mvc5\PTCCommon\bin\Debug\PTCCommon.pdb
+D:\.NET development\html-helper-library-aspdotnet-mvc5\PTCCommon\obj\Debug\PTCCommon.csproj.AssemblyReference.cache
+D:\.NET development\html-helper-library-aspdotnet-mvc5\PTCCommon\obj\Debug\PTCCommon.csproj.CoreCompileInputs.cache
+D:\.NET development\html-helper-library-aspdotnet-mvc5\PTCCommon\obj\Debug\PTCCommon.dll
+D:\.NET development\html-helper-library-aspdotnet-mvc5\PTCCommon\obj\Debug\PTCCommon.pdb
