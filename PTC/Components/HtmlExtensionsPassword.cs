@@ -9,21 +9,21 @@ using System.Web.Routing;
 
 namespace PTC
 {
-    public static class HtmlExtensionsTextBox
+    public static class HtmlExtensionsPassword
     {
-        public static MvcHtmlString BootstrapTextBoxFor<TModel, TValue>(
+        public static MvcHtmlString BootstrapPasswordFor<TModel, TValue>(
           this HtmlHelper<TModel> htmlHelper,
           Expression<Func<TModel, TValue>> expression,
           HtmlExtensionsCommon.Html5InputTypes type,
           object htmlAttributes = null
           )
         {
-            return HtmlExtensionsTextBox.BootstrapTextBoxFor(htmlHelper,
+            return HtmlExtensionsPassword.BootstrapPasswordFor(htmlHelper,
               expression, type, string.Empty, string.Empty, false, false,
               string.Empty, htmlAttributes);
         }
 
-        public static MvcHtmlString BootstrapTextBoxFor<TModel, TValue>(
+        public static MvcHtmlString BootstrapPasswordFor<TModel, TValue>(
           this HtmlHelper<TModel> htmlHelper,
           Expression<Func<TModel, TValue>> expression,
           HtmlExtensionsCommon.Html5InputTypes type,
@@ -31,11 +31,11 @@ namespace PTC
           object htmlAttributes = null
           )
         {
-            return HtmlExtensionsTextBox.BootstrapTextBoxFor(htmlHelper,
+            return HtmlExtensionsPassword.BootstrapPasswordFor(htmlHelper,
               expression, type, string.Empty, string.Empty, false, false,
               cssClass, htmlAttributes);
         }
-        public static MvcHtmlString BootstrapTextBoxFor<TModel, TValue>(
+        public static MvcHtmlString BootstrapPasswordFor<TModel, TValue>(
          this HtmlHelper<TModel> htmlHelper,
          Expression<Func<TModel, TValue>> expression,
          HtmlExtensionsCommon.Html5InputTypes type,
@@ -46,12 +46,12 @@ namespace PTC
          object htmlAttributes = null
          )
         {
-            return HtmlExtensionsTextBox.BootstrapTextBoxFor(htmlHelper,
+            return HtmlExtensionsPassword.BootstrapPasswordFor(htmlHelper,
               expression, type, title, placeholder, isRequired, isAutoFocus,
               string.Empty, htmlAttributes);
         }
 
-        public static MvcHtmlString BootstrapTextBoxFor<TModel, TValue>(
+        public static MvcHtmlString BootstrapPasswordFor<TModel, TValue>(
           this HtmlHelper<TModel> htmlHelper,
           Expression<Func<TModel, TValue>> expression,
           HtmlExtensionsCommon.Html5InputTypes type,

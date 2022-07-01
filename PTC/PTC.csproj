@@ -114,6 +114,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Components\HtmlExtensionsCommon.cs" />
+    <Compile Include="Components\HtmlExtensionsPassword.cs" />
     <Compile Include="Components\HtmlExtensionsTextBox.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Components\HtmlExtensionsButton.cs" />
